@@ -19,7 +19,7 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'src/resources/views'));
 
 app.use(logger('dev'));
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 
