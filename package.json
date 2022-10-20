@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app",
+    "watch": "sass src/resources/scss/app.scss src/public/css/app.css",
     "dev": "nodemon app"
   },
   "dependencies": {
@@ -12,11 +13,15 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "express-handlebars": "^6.0.6",
-    "hbs": "~4.0.4",
+    "hbs": "^4.2.0",
     "http-errors": "~1.6.3",
     "module_name": "^1.0.0",
     "mongoose": "^6.6.5",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0"
   }
 }
